@@ -13,13 +13,61 @@
   padding: 5px;
 }
 
+.btn_nav {
+  background-color: #5f0867;
+  color: rgb(21, 129, 168);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.navbtn{
+  z-index: 1;
+    position: relative;
+    display: inline-block;
+    /* background-color: blueviolet; */
+  
+}
+
+.fa-sharp {
+  height: 10px;
+  width: 10px;
+  color: palevioletred;
+}
+
+.btn_links{
+
+  display: none;
+  position: absolute;
+  background-color: palevioletred;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+
+.btn_links .btnatag {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.btn_links .btnatag:hover {background-color: #f1f1f1}
+
+.navbtn:hover .btn_links {
+  display: block;
+}
+
 ul {
   list-style-type: none;
-  background-color: palevioletred;
-  /* overflow: hidden; */
+   /* overflow: hidden; */
   position: fixed;
   width: 100%;
   z-index: 1;
+
 }
 
 li {
@@ -38,9 +86,11 @@ li a:hover {
   background-color: blueviolet;
 }
 
-/* nav{
-    opacity: 0.5;
-} */
+.navbar {
+    
+
+
+}
 
 /* END */
 
@@ -53,6 +103,7 @@ li a:hover {
   height: 100vh;
   width: 100%;
   box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+  overflow-y: hidden;
 }
 
 .Home_Text {
