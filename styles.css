@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  /* overflow-x: hidden; */
 }
 
 /* NAVBAR */
@@ -17,9 +16,10 @@
 ul {
   list-style-type: none;
   background-color: palevioletred;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 li {
@@ -71,35 +71,88 @@ li a:hover {
 /* ABOUT SECTION  */
 
 .background_about{
-    background-image: url(/background_about.png);
-    background-size: cover;
-    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
-    height: 100vh;
+  background-color: black;
+   height: 100vh;
 }
 
 .aboutpic{
-  height: 150px;
-  width: 150px;
-  margin: 25px;
+ height: 200px;
+ width: 200px;
+margin: 10px;
 }
 
 .About_Text{
-  color: white;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-
+ color: white;
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ align-items: center;
+  overflow: hidden;
+  
+  
 }
 
 .about_heading{
-  margin: 10px;
-  font-size: 40px;
+ margin: 10px;
+ font-size: 40px;
 }
 
 .about_para{
-  padding-top: 100px;
-  font-size: 20px;
+ padding-top: 50px;
+ font-size: 25px;
+ margin: 10px;
 }
+
+.flip-box {
+  background-color: transparent;
+  width: 75vw;
+  height: 80vh;
+  border: 1px solid black;
+  perspective: 1000px;
+  margin: auto;
+  margin-top: 50px;
+
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 2s;
+  transform-style: preserve-3d;
+  
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+  
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+ 
+}
+
+.flip-box-front {
+  background-image: url(/background_about.png);
+  background-size: cover;
+  box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+
+.flip-box-back {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+  overflow: hidden;
+ 
+}
+
+
 
 /* END  */
 
@@ -111,6 +164,9 @@ background-color: black;
 height: 100vh;
 
 }
+
+/* TEST */
+
 
 /* END  */
 
@@ -186,5 +242,39 @@ margin: 10px;
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 400px) {
+/* @media screen and (max-width: 400px) {
+
+  .Home_Text{
+    font-size: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .mypic{
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-left: 10px;
+  
+  
+  }
+
 }
+
+@media screen and (max-width: 600px){
+
+.Home_Text{
+
+  font-size: 5px ;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.mypic{
+  height: 250px;
+  width: 250px;
+  float: right;
+  margin-right: 10px;
+}
+
+} */
+
+
