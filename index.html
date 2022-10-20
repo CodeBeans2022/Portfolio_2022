@@ -9,7 +9,7 @@
   </head>
   <body>
     <!-- NAVBAR  -->
-    <nav class="navbar">
+    <nav>
       <ul>
         <img class="initails" src="/initails.png" alt="JK" />
 
@@ -40,17 +40,15 @@
 
         <li><a href="">Work&Education</a></li>
 
-        <li><a href="">About</a></li>
+        <li><a href="#about">About</a></li>
 
         <li><a href="index.html">Home</a></li>
       </ul>
-
-    
     </nav>
     <!-- END  -->
 
     <!-- LANDING SECTION  -->
-    <section class="background_landing">
+    <section class="background_landing" id="">
       <div class="Home_Text">
         <h1>Hello I'm Jamie-Lee Kinnear</h1>
         <img class="mypic" src="/programmer.png" alt="mypic" />
@@ -61,7 +59,7 @@
     <!-- END  -->
 
     <!-- ABOUT SECTION  -->  
-    <section class="background_about">
+    <section class="background_about" id="about">
         <div class="About_Text">
         <div class="flip-box">
           <div class="flip-box-inner">
@@ -96,6 +94,7 @@
           </div>
         </div>
     </div>
+    
       </section> 
      
  
@@ -104,7 +103,9 @@
 
     <!-- WORK&EDUCATION SECTION  -->
 
-    <section class="background_WE"></section>
+    <section class="background_WE">
+      
+    </section>
 
     <!-- END -->
 
@@ -127,37 +128,148 @@
     <!-- TESTIMONIAL SECTION -->
 
     <section class="background_testimonial">
-      <div></div>
+
+
+      <div class="Cards_Testi">
+      <!-- 1 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+
+            <img class="Card_img1" src="/programmer.png" alt="John">
+            <h1>John Doe</h1>
+            <p class="title">CEO & Founder, Example</p>
+            <p>Harvard University</p>
+            
+
+          </div>
+          <div class="flip-card-back">
+            <div class="flipbackbutton">
+            <div style="margin: 24px 0;">
+              <a href="#"><i class="fa fa-dribbble"></i></a> 
+              <a href="#"><i class="fa fa-twitter"></i></a>  
+              <a href="#"><i class="fa fa-linkedin"></i></a>  
+              <a href="#"><i class="fa fa-facebook"></i></a> 
+            </div>
+            <p><button class="btncontact" >Contact</button></p>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+
+            <img class="Card_img2" src="/programmer.png" alt="John">
+            <h1>John Doe</h1>
+            <p class="title">CEO & Founder, Example</p>
+            <p>Harvard University</p>
+           
+
+          </div>
+          <div class="flip-card-back">
+            <div style="margin: 24px 0;">
+              <a href="#"><i class="fa fa-dribbble"></i></a> 
+              <a href="#"><i class="fa fa-twitter"></i></a>  
+              <a href="#"><i class="fa fa-linkedin"></i></a>  
+              <a href="#"><i class="fa fa-facebook"></i></a> 
+            </div>
+            <p><button class="btncontact" >Contact</button></p>
+          </div>
+        </div>
+      </div>
+
+<!-- 3 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+
+            <img class="Card_img3" src="/programmer.png" alt="John">
+            <h1>John Doe</h1>
+            <p class="title">CEO & Founder, Example</p>
+            <p>Harvard University</p>
+           
+
+          </div>
+          <div class="flip-card-back">
+            <div style="margin: 24px 0;">
+              <a href="#"><i class="fa fa-dribbble"></i></a> 
+              <a href="#"><i class="fa fa-twitter"></i></a>  
+              <a href="#"><i class="fa fa-linkedin"></i></a>  
+              <a href="#"><i class="fa fa-facebook"></i></a> 
+            </div>
+            <p><button class="btncontact" >Contact</button></p>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <!-- 4 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+
+            <img class="Card_img3" src="/programmer.png" alt="John">
+            <h1>John Doe</h1>
+            <p class="title">CEO & Founder, Example</p>
+            <p>Harvard University</p>
+           
+            
+          </div>
+          <div class="flip-card-back">
+            <div style="margin: 24px 0;">
+              <a href="#"><i class="fa fa-dribbble"></i></a> 
+              <a href="#"><i class="fa fa-twitter"></i></a>  
+              <a href="#"><i class="fa fa-linkedin"></i></a>  
+              <a href="#"><i class="fa fa-facebook"></i></a> 
+            </div>
+            <p><button class="btncontact" >Contact</button></p>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+
+
     </section>
 
     <!-- END  -->
 
     <!-- CONTACT SECTION  -->
 
+    
+
     <section class="background_contact">
-      <div class="contact_form">
-        <form action="https://formspree.io/f/xdojdjnj" method="POST">
-          <input type="text" placeholder="First Name" />
+    <div class="inputs">
+      <form action="https://formspree.io/f/xdojdjnj" method="POST">
+        <input
+          class="placeholder"
+          type="text"
+          placeholder="First Name"
+        />
+        <input class="placeholder" type="text" placeholder="Last Name" />
+        <input class="placeholder" type="email" placeholder="Email" />
+        <input
+          class="placeholder"
+          type="text"
+          placeholder="Phone Number"
+        />
+        <textarea
+          class="placeholder"
+          name="message"
+          id="message"
+          placeholder="Message"
+        ></textarea>
 
-          <input type="text" placeholder="Last Name" />
-
-          <input type="email" placeholder="Email" />
-
-          <input type="text" placeholder="Phone Number" />
-
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Type Message"
-          ></textarea>
-
-          <button class="btn_contact" type="submit">Send</button>
-          <button class="btn_contact" type="reset">Clear</button>
-        </form>
-      </div>
-    </section>
-
-    <!-- END  -->
+        <button class="formbtn" type="submit">Send</button>
+        <button class="formbtn" type="reset">Reset</button>
+      </form>
+    </div>
+  </section>
 
     <script src="https://kit.fontawesome.com/850ca6a355.js"></script>
   </body>
